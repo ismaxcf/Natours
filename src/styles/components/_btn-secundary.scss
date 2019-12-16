@@ -1,0 +1,24 @@
+.btn-secundary{
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    color: $color-primary-dark;
+    border: 0;
+    border-bottom: 1px solid $color-primary-dark;
+    position: relative;
+    padding: 5px;
+    &:visited{
+    text-decoration: none;
+    transition: all 2s;
+    }
+    &:hover{
+        background-color: $color-primary-dark;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 10px rgb(100, 99, 99);
+    }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 8px 4px rgb(100, 99, 99);
+    }
+}

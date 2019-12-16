@@ -1,0 +1,46 @@
+.About-Us{
+    width: 100%;
+    height: 90vh;
+    // background-color:$color-primary;
+    
+    // clip-path: polygon(40% 100%, 100% 80%, 100% 100%);
+
+    &--Title{
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: linear-gradient(to right, $color-primary-light 0%,$color-primary-dark 100%);
+        text-align: center;
+        // background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 1.5s;
+        &:hover{
+            transform: skewY(5deg) skewX(2deg) scale(1.1);
+            text-shadow: 5px 4px 2px rgb(196, 194, 194);
+        }
+    }
+}
+
+.Features{
+    width: 100%;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("./../../media/nat-4.jpg");
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+.Tours{
+    padding: 20rem 0 10rem 0;
+    text-align: center;
+}
+
+.Stories{
+    padding-top: 15rem 0 15rem 0;
+    background-color: $text-grey-light;
+}

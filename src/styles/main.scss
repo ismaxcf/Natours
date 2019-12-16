@@ -1,0 +1,72 @@
+@import'./abstract/functions';
+@import'./abstract/mixins';
+@import'./abstract/variables';
+
+@import'./base/animations';
+@import'./base/base';
+@import'./base/typography';
+@import'./base/utilities';
+
+@import'./layout/grid';
+
+@import './components/btn';
+@import'./components/btn-secundary';
+@import'./components/composition';
+@import'./components/feature-box';
+@import './components/card';
+@import './components/story';
+
+@import'./pages/home';
+
+
+
+.Header{
+    /* position: absolute; */
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,  rgba($color-primary-dark, 0.8),rgba($color-primary-light, 0.8) ) ,url("../../media/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 50%, 0 100%); */
+
+    &__Logo{
+        position: absolute;
+        top:50px;
+        left:50px;
+
+        &-Img{
+            width: 70px;
+        }
+    }
+
+    &__Text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        text-align: center;
+    }
+}
+
+.Header-Title{
+    color: white;
+    text-transform: uppercase;
+    
+    &--Main{
+        font-weight: 400;
+        letter-spacing: 35px;
+        display: block;
+        animation: leftAppear 3s;
+    }
+
+    &--Sub{
+        font-weight: 700;
+        font-size: $default-font-size;
+        letter-spacing: 12.7px;
+        text-align: start;
+        display: block;
+        animation: rightAppear 3s;
+    }
+}
+

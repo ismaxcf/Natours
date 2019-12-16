@@ -1,0 +1,32 @@
+@keyframes leftAppear{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0px);
+    }
+}
+
+@keyframes rightAppear{
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0px);
+    }
+}
+
+@keyframes downAppear{
+    0%{
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0, 0);
+    }
+}

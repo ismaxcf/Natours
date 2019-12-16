@@ -1,0 +1,13 @@
+.header-thrd{
+    color: $text-grey-dark;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $paragraph-font-size;
+    color:$text-grey-medium;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}

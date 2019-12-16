@@ -1,0 +1,139 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
+.Header{
+    /* position: absolute; */
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom,  rgba(0, 128, 0, 0.8),#28b485bd ) ,url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 50%, 0 100%); */
+}
+.Header__Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+}
+.Header__Logo{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+.Header__Logo-Img{
+    width: 70px;
+}
+.Header-Title{
+    color: white;
+    text-transform: uppercase;
+}
+
+.Header-Title--Main{
+    font-weight: 400;
+    letter-spacing: 35px;
+    display: block;
+    animation: leftAppear 3s;
+}
+@keyframes leftAppear{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0px);
+    }
+}
+
+.Header-Title--Sub{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 12.7px;
+    text-align: start;
+    display: block;
+    animation: rightAppear 3s;
+}
+
+@keyframes rightAppear{
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0px);
+    }
+}
+.Header-Button{
+    text-decoration: none;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: white;
+    color: #777;
+    border: 0;
+    border-radius: 50px;
+    position: relative;
+    animation: downAppear 3s;
+}
+.Header-Button:visited{
+    text-decoration: none;
+    transition: all 1s;
+}
+.Header-Button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px rgb(100, 99, 99);
+}
+
+.Header-Button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 8px 4px rgb(100, 99, 99);
+}
+.Header-Button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.Header-Button:hover::after{
+    transform: scale(1.4);
+    opacity: 0;
+}
+@keyframes downAppear{
+    0%{
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0, 0);
+    }
+}

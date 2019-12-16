@@ -1,0 +1,39 @@
+.composition{
+    position: relative;
+    &__photo{
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+        
+        transition: all 1s;
+        &:hover{
+            z-index: 1;
+            border: 10px solid $color-primary-dark;
+            padding: 10px;
+            
+        }
+
+        &--p1{
+            @extend .composition__photo;
+            position: absolute;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        &--p2{
+            @extend .composition__photo;
+            position: absolute;
+            transform: translate(70%, 10%);
+            &:hover{
+                transform: scale(1.4) translate(70%, 10%);
+            }
+        }
+        &--p3{
+            @extend .composition__photo;
+            position: absolute;
+            transform: translate(30%, 70%);
+            &:hover{
+                transform: scale(1.4) translate(30%, 60%);
+            }
+        }
+    }
+}

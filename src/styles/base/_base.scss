@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: "Lato";
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color:$text-grey-dark;
+}
+
+html{
+    font-size:62.5%;
+}

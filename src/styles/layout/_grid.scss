@@ -1,0 +1,55 @@
+.grid{
+    //margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    max-width: 80%;
+    // min-height: 50px;
+    margin: 0 auto; 
+    // background-color: rgb(221, 219, 216);
+
+    &:not(:last-child){
+        margin-bottom: $vertical-space;
+    }
+
+    @include clearfix;
+    .col{
+        color: black;
+        float: left;
+        &:not(:last-child){
+            margin-right: $horizontal-space;
+        }
+        min-height: 50px;
+        height: auto;
+    }
+    .col-1o2{
+        @extend .col;
+        width: calc((100% - #{$horizontal-space})/2);
+        // background-color: red;
+        
+    }
+
+    .col-1o3{
+        @extend .col;
+        width: calc((100% - #{$horizontal-space*2})/3);
+        // background-color: blueviolet;
+    }
+    .col-2o3{
+        @extend .col;
+        width: calc((100%*2 - #{$horizontal-space})/3);
+        background-color: rgb(226, 43, 211);
+    }
+    .col-1o4{
+        @extend .col;
+        width: calc((100% - #{$horizontal-space*3})/4);
+        // background-color: greenyellow;
+    }
+    .col-3o4{
+        @extend .col;
+        width: calc((100%*3 - #{$horizontal-space})/4);
+        background-color: rgb(234, 255, 47);
+    }
+    
+}
