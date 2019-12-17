@@ -47,6 +47,17 @@
         transform: translate(-50%,-60%);
         text-align: center;
     }
+
+    &__Menu{
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        background-color: white;
+        border-radius: 30px;
+        width: 40px;
+        height:40px;
+        text-align: center;    
+    }
 }
 
 .Header-Title{

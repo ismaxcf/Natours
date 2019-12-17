@@ -22,7 +22,7 @@
             &__header{
                 height: 40%;
                 // background-color: black;
-                background-blend-mode: color;
+                background-blend-mode: lighten;
                 clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
                 overflow: hidden;
                 &__title{
